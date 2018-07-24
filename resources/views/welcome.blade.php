@@ -98,8 +98,42 @@
                        <br><br>
                        <input type="submit" value="Ingresar">
                    </form>
+                   <table class="table table-hover">
+
+                              <tr>
+                                <th >Nombre</th>
+                                <th >Apellido</th>
+
+                                <th >Edad</th>
+
+                               
+                              </tr>
+
+                             @foreach($usuarios as $user)
+                              <tr>
+                                <td>{{$user->nombre}}</td>
+                                <td>{{$user->apellido}}</td>
+                                <td>{{$user->edad}}</td>
+                            
+
+                              </tr>
+                              @endforeach
+
+
+
+                            </table>
                 </div>
             </div>
         </div>
+
+
+        
+
+
+
+
+
+
+
     </body>
 </html>

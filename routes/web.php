@@ -11,8 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 Route::post('guardar','usuarioController@plo');
+
+Route::get('/', 'usuarioController@index');

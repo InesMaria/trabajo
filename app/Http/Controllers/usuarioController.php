@@ -24,4 +24,12 @@ class usuarioController extends Controller
     	$usuario->save();
     	return redirect()->back();
     }
+
+public function index() {
+    $usuarios = usuario::all();
+
+    // return view('welcome', ['usuario' => $usuarios]);
+     return view('welcome')->with('usuarios',$usuarios);
+  }
+    
 }

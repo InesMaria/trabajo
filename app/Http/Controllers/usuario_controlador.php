@@ -25,4 +25,7 @@ dd($request->all());
     	$usuario->save();
     	return redirect()->back();
     }
+  
+ 
+  
 }
