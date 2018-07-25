@@ -28,7 +28,7 @@ class usuarioController extends Controller
 public function index() {
     $usuarios = usuario::all();
 
-    // return view('welcome', ['usuario' => $usuarios]);
+    
      return view('welcome')->with('usuarios',$usuarios);
   }
     
